@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Fredoka One';  
+    src: url('./fredokaone-regular-webfont.woff2') format('woff2'),
+      url('./fredokaone-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Poppins';  
+    src: url('./poppins-regular-webfont.woff2') format('woff2'),
+      url('./poppins-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Sansita Swashed';  
+    src: url('./sansitaswashed-variablefont_wght-webfont.woff2') format('woff2'),
+      url('./sansitaswashed-variablefont_wght-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#content {
+    height: calc(100% - 87.8px);}
+
+#nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#links a {
+    text-decoration: none;
+}
+
+#links {
+    display: flex;
+    list-style-type: none;
+    gap: 100px;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 38vw;
+}
+
+#info { 
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+    width: 25vw;
+    padding: 20px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-image: url('../src/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: red;
+    gap: 100px;
+    height: 100%;
+}
+
+h1, p {
+    margin: 0;
+}
+
+#home h1 {
+    font-family: 'Fredoka One', cursive;
+    font-size: 48px;
+    color: white;
+}
+
+#addressBox, #timesBox {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+}
+
+.homeIcon {
+    height: 32px;
+    width: 32px;
+}
+
+#addressBox p {
+    width: 15vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#timesBox p {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    font-size: 18px;
+}
+
+#nav {
+    background-color: #b21414;
+}
+
+h2 {
+    color: white;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+}
+
+li {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+#text p {
+    font-family: 'Fredoka One', cursive;
+    font-weight: bold;
+    font-size: 23px;
+    color:wheat;
+}
+
+button {
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    border-radius: 12px;
+    background-color: #b21414;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+}
+
+.active {
+    color: wheat;
+}
+
+#menu-heading {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+#menu-heading img {
+    width: 32px;
+    height: 32px;
+}
+
+#food-grid {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+    gap: 15px 50px;
+    width: 30%;
+    background-color: wheat;
+
+}
+
+#food-grid img {
+    height: 128px;
+    width: 128px;
+}
+
+.pizza {
+    display: flex;
+    align-items: center;
+}
+
+.pizza-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.pizza-text h4 {
+    font-family: 'Sansita Swashed', cursive;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    border-bottom: 1px dashed black;
+}
